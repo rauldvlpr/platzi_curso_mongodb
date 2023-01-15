@@ -1,0 +1,16 @@
+use('sample_training');
+
+db.zips.find({
+   state : "NY"
+}).count();
+
+// Search for documents in the current collection.
+// db.getCollection('zips')
+//   .find(
+//     {
+//       /*
+//       * Filter
+//       * fieldA: value or expression
+//       */
+//       state : "NY"
+//     });
